@@ -203,10 +203,13 @@ function vitePluginStorageProxy(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
+const isGitHubBuild = process.env.GITHUB_PAGES === 'true';
+const plugins = isGitHubBuild
+  ? [react(), tailwindcss()]
+  : [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
 
 export default defineConfig({
-  base: process.env.GITHUB_PAGES === 'true' ? '/Ohana-Lifestyle/' : '/',
+  base: isGitHubBuild ? '/Ohana-Lifestyle/' : '/',
   plugins,
   resolve: {
     alias: {
