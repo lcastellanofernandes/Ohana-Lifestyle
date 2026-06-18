@@ -1,2 +1,4 @@
 .project-config.json
 .github/
+node_modules/
+dist/
