@@ -40,7 +40,7 @@ export default function LookDetail() {
     <div className="min-h-screen" style={{ backgroundColor: "#CFE0BC" }}>
       <ProfileHeader
         name="Ohana Lifestyle"
-        bio="Curadoria de looks que valorizam todo tipo de corpo"
+        bio="Curadoria de Looks"
         avatar="https://files.manuscdn.com/user_upload_by_module/session_file/310519663653761940/RAxCranEznkybURV.png"
       />
 
@@ -77,7 +77,7 @@ export default function LookDetail() {
           {/* Links das pecas */}
           <div className="flex-1 w-full">
             <h2 className="text-xl font-bold mb-4" style={{ color: "#2D5016" }}>
-              Pecas do Look
+              Peças do Look
             </h2>
 
             {loading ? (

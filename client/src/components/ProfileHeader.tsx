@@ -102,15 +102,12 @@ export default function ProfileHeader({ name, bio, avatar }: ProfileHeaderProps)
         </div>
       </div>
 
-      {/* Lojas parceiras */}
+      {/* Loja parceira */}
       <div
-        className="flex items-center justify-center gap-3 pb-2"
+        className="flex items-center justify-center pb-2"
         style={{ borderTop: "1px solid #b8d4a5" }}
       >
-        <span className="text-xs" style={{ color: "#4a6b3a" }}>Disponível em:</span>
         <IconShopee />
-        <IconShein />
-        <IconMercadoLivre />
       </div>
     </header>
   );

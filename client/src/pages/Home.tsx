@@ -10,7 +10,7 @@ interface InstagramPost {
 export default function Home() {
   const profileData = {
     name: "Ohana Lifestyle",
-    bio: "Curadoria de looks que valorizam todo tipo de corpo",
+    bio: "Curadoria de Looks",
     avatar:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663653761940/RAxCranEznkybURV.png",
   };
@@ -56,13 +56,13 @@ export default function Home() {
 
       <div className="max-w-4xl mx-auto px-4 pb-16">
         <h2
-          className="text-center font-display text-2xl md:text-3xl font-bold mb-2"
-          style={{ color: "#2D5016" }}
+          className="text-center font-display font-bold mb-2"
+          style={{ color: "#2D5016", fontSize: "10px" }}
         >
           Encontre o seu Look Perfeito
         </h2>
-        <p className="text-center mb-8" style={{ color: "#4a6b3a" }}>
-          Clique no Look que amou e veja cada peça disponível
+        <p className="text-center mb-8" style={{ color: "#4a6b3a", fontSize: "8px" }}>
+          Clique no Look que <strong>amou</strong> e veja <strong>cada peça</strong> disponível
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
