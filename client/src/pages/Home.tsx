@@ -10,7 +10,7 @@ interface InstagramPost {
 export default function Home() {
   const profileData = {
     name: "Ohana Lifestyle",
-    bio: "Moda Feminina | Curadoria de looks que valorizam todo tipo de corpo",
+    bio: "Curadoria de looks que valorizam todo tipo de corpo",
     avatar:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663653761940/RAxCranEznkybURV.png",
   };
