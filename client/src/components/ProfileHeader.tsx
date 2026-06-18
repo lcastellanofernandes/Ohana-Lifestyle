@@ -102,13 +102,6 @@ export default function ProfileHeader({ name, bio, avatar }: ProfileHeaderProps)
         </div>
       </div>
 
-      {/* Loja parceira */}
-      <div
-        className="flex items-center justify-center pb-2"
-        style={{ borderTop: "1px solid #b8d4a5" }}
-      >
-        <IconShopee />
-      </div>
     </header>
   );
 }

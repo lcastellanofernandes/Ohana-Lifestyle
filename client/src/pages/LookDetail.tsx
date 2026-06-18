@@ -40,7 +40,7 @@ export default function LookDetail() {
     <div className="min-h-screen" style={{ backgroundColor: "#CFE0BC" }}>
       <ProfileHeader
         name="Ohana Lifestyle"
-        bio="Curadoria de Looks"
+        bio="Curadoria de roupas na Shopee"
         avatar="https://files.manuscdn.com/user_upload_by_module/session_file/310519663653761940/RAxCranEznkybURV.png"
       />
 

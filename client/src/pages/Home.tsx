@@ -10,7 +10,7 @@ interface InstagramPost {
 export default function Home() {
   const profileData = {
     name: "Ohana Lifestyle",
-    bio: "Curadoria de Looks",
+    bio: "Curadoria de roupas na Shopee",
     avatar:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663653761940/RAxCranEznkybURV.png",
   };
@@ -57,11 +57,11 @@ export default function Home() {
       <div className="max-w-4xl mx-auto px-4 pb-16">
         <h2
           className="text-center font-display font-bold mb-2"
-          style={{ color: "#2D5016", fontSize: "10px" }}
+          style={{ color: "#2D5016", fontSize: "16px" }}
         >
-          Encontre o seu Look Perfeito
+          Compre o seu look perfeito
         </h2>
-        <p className="text-center mb-8" style={{ color: "#4a6b3a", fontSize: "8px" }}>
+        <p className="text-center mb-8" style={{ color: "#4a6b3a", fontSize: "12px" }}>
           Clique no Look que <strong>amou</strong> e veja <strong>cada peça</strong> disponível
         </p>
 
@@ -77,9 +77,9 @@ export default function Home() {
                 backgroundColor: "#ffffff",
               }}
             >
-              <div className="relative w-full" style={{ paddingBottom: "125%" }}>
+              <div className="relative w-full" style={{ paddingBottom: "165%" }}>
                 <iframe
-                  src={`https://www.instagram.com/p/${post.code}/embed/captioned/?cr=1&v=14&wp=540`}
+                  src={`https://www.instagram.com/p/${post.code}/embed/captioned/?cr=1&v=14&wp=400`}
                   className="absolute inset-0 w-full h-full border-0"
                   scrolling="no"
                   allowTransparency={true}
