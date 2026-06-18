@@ -55,7 +55,7 @@ export default function Home() {
       />
 
       <div className="max-w-4xl mx-auto px-4 pb-16">
-        <p className="text-center mb-6" style={{ color: "#4a6b3a", fontSize: "12px" }}>
+        <p className="text-center mb-6 mt-6" style={{ color: "#4a6b3a", fontSize: "18px" }}>
           Clique no look que <strong>amou</strong> e reserve agora mesmo!
         </p>
 
