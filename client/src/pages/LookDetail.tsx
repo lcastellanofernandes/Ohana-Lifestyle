@@ -40,7 +40,7 @@ export default function LookDetail() {
     <div className="min-h-screen" style={{ backgroundColor: "#CFE0BC" }}>
       <ProfileHeader
         name="Ohana Lifestyle"
-        bio="Moda Feminina | Curadoria de looks que valorizam todo tipo de corpo"
+        bio="Curadoria de looks que valorizam todo tipo de corpo"
         avatar="https://files.manuscdn.com/user_upload_by_module/session_file/310519663653761940/RAxCranEznkybURV.png"
       />
 
@@ -53,7 +53,6 @@ export default function LookDetail() {
           ← Voltar para os looks
         </Link>
 
-        {/* Instagram Embed */}
         <div className="rounded-xl overflow-hidden shadow-md mb-8 bg-white">
           <div className="relative w-full" style={{ paddingBottom: "125%" }}>
             <iframe
@@ -67,11 +66,7 @@ export default function LookDetail() {
           </div>
         </div>
 
-        {/* Links das Pecas */}
-        <h2
-          className="text-xl font-bold mb-4"
-          style={{ color: "#2D5016" }}
-        >
+        <h2 className="text-xl font-bold mb-4" style={{ color: "#2D5016" }}>
           Pecas do Look
         </h2>
 
