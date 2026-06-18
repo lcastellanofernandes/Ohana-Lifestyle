@@ -42,15 +42,12 @@ function IconShopee() {
   return (
     <svg width="36" height="36" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect width="64" height="64" rx="14" fill="#EE4D2D" />
-      <path
-        d="M32 10C26.48 10 22 14.48 22 20H26C26 16.69 28.69 14 32 14C35.31 14 38 16.69 38 20H42C42 14.48 37.52 10 32 10Z"
-        fill="white"
-      />
-      <path
-        d="M18 22L20.5 50H43.5L46 22H18Z"
-        fill="white" fillOpacity="0.95"
-      />
-      <text x="32" y="41" textAnchor="middle" dominantBaseline="middle" fontSize="18" fontWeight="bold" fontFamily="Arial, sans-serif" fill="#EE4D2D">S</text>
+      {/* Alca da sacola */}
+      <path d="M22 26C22 19.37 26.48 14 32 14C37.52 14 42 19.37 42 26" stroke="white" strokeWidth="4" strokeLinecap="round" fill="none" />
+      {/* Corpo da sacola */}
+      <rect x="14" y="26" width="36" height="26" rx="5" fill="white" />
+      {/* S dentro da sacola */}
+      <text x="32" y="44" textAnchor="middle" dominantBaseline="middle" fontSize="20" fontWeight="900" fontFamily="Arial Black, Arial, sans-serif" fill="#EE4D2D">S</text>
     </svg>
   );
 }
@@ -59,7 +56,7 @@ function IconShein() {
   return (
     <svg width="36" height="36" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect width="64" height="64" rx="14" fill="#000000" />
-      <text x="32" y="36" textAnchor="middle" dominantBaseline="middle" fontSize="36" fontWeight="bold" fontFamily="Arial, sans-serif" fill="white">S</text>
+      <text x="32" y="38" textAnchor="middle" dominantBaseline="middle" fontSize="40" fontWeight="900" fontFamily="Arial Black, Arial, sans-serif" fill="white">S</text>
     </svg>
   );
 }
@@ -68,20 +65,16 @@ function IconMercadoLivre() {
   return (
     <svg width="36" height="36" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect width="64" height="64" rx="14" fill="#FFE600" />
-      <ellipse cx="32" cy="34" rx="20" ry="13" fill="#3D2D8F" />
-      <ellipse cx="32" cy="34" rx="18" ry="11" fill="#FFE600" />
-      <path d="M22 34C22 34 25 29 32 29C39 29 42 34 42 34C42 34 39 39 32 39C25 39 22 34 22 34Z" fill="#FFE600" />
-      <path
-        d="M24 33C25.5 30.5 28.5 28.5 32 28.5C35.5 28.5 38.5 30.5 40 33"
-        stroke="#3D2D8F" strokeWidth="1.5" fill="none"
-      />
-      <path
-        d="M24 35C25.5 37.5 28.5 39.5 32 39.5C35.5 39.5 38.5 37.5 40 35"
-        stroke="#3D2D8F" strokeWidth="1.5" fill="none"
-      />
-      <path d="M26 31.5C28 30 30 29.5 32 29.5L32 38.5C30 38.5 28 38 26 36.5C25 35.5 24.5 34.5 24.5 34C24.5 33 25 32 26 31.5Z" fill="white" fillOpacity="0.9"/>
-      <path d="M38 31.5C36 30 34 29.5 32 29.5L32 38.5C34 38.5 36 38 38 36.5C39 35.5 39.5 34.5 39.5 34C39.5 33 39 32 38 31.5Z" fill="white" fillOpacity="0.7"/>
-      <ellipse cx="32" cy="34" rx="19" ry="12" stroke="#3D2D8F" strokeWidth="2" fill="none" />
+      {/* Oval azul */}
+      <ellipse cx="32" cy="36" rx="22" ry="14" fill="#2968C8" />
+      {/* Interior branco */}
+      <ellipse cx="32" cy="36" rx="19" ry="11" fill="white" />
+      {/* Mao esquerda */}
+      <path d="M18 36 C20 32, 25 30, 30 33 L30 39 C25 42, 20 40, 18 36Z" fill="#2968C8" />
+      {/* Mao direita */}
+      <path d="M46 36 C44 32, 39 30, 34 33 L34 39 C39 42, 44 40, 46 36Z" fill="#2968C8" />
+      {/* Detalhe central */}
+      <ellipse cx="32" cy="36" rx="3" ry="4" fill="white" />
     </svg>
   );
 }
