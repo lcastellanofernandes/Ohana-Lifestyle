@@ -55,14 +55,8 @@ export default function Home() {
       />
 
       <div className="max-w-4xl mx-auto px-4 pb-16">
-        <h2
-          className="text-center font-display font-bold mb-2"
-          style={{ color: "#2D5016", fontSize: "16px" }}
-        >
-          Compre o seu look perfeito
-        </h2>
-        <p className="text-center mb-8" style={{ color: "#4a6b3a", fontSize: "12px" }}>
-          Clique no Look que <strong>amou</strong> e veja <strong>cada peça</strong> disponível
+        <p className="text-center mb-6" style={{ color: "#4a6b3a", fontSize: "12px" }}>
+          Clique no look que <strong>amou</strong> e reserve agora mesmo!
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -77,9 +71,9 @@ export default function Home() {
                 backgroundColor: "#ffffff",
               }}
             >
-              <div className="relative w-full" style={{ paddingBottom: "165%" }}>
+              <div className="relative w-full" style={{ paddingBottom: "130%" }}>
                 <iframe
-                  src={`https://www.instagram.com/p/${post.code}/embed/captioned/?cr=1&v=14&wp=400`}
+                  src={`https://www.instagram.com/p/${post.code}/embed/?cr=1&v=14&wp=320`}
                   className="absolute inset-0 w-full h-full border-0"
                   scrolling="no"
                   allowTransparency={true}
