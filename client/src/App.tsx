@@ -5,16 +5,16 @@ import { Route, Switch, Router as WouterRouter } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import LookDetail from "./pages/LookDetail";
 
-// Detectar base path para GitHub Pages
 const base = import.meta.env.BASE_URL || "/";
 
 function Routes() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/look/:code"} component={LookDetail} />
       <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
       <Route component={NotFound} />
     </Switch>
   );
