@@ -44,7 +44,7 @@ export default function LookDetail() {
         avatar="https://files.manuscdn.com/user_upload_by_module/session_file/310519663653761940/RAxCranEznkybURV.png"
       />
 
-      <div className="max-w-5xl mx-auto px-4 pb-16">
+      <div className="max-w-5xl mx-auto px-4 pb-16 pt-6">
         <Link
           href="/"
           className="inline-flex items-center gap-2 mb-5 text-sm font-semibold hover:underline"
