@@ -44,57 +44,67 @@ export default function LookDetail() {
         avatar="https://files.manuscdn.com/user_upload_by_module/session_file/310519663653761940/RAxCranEznkybURV.png"
       />
 
-      <div className="max-w-2xl mx-auto px-4 pb-16">
+      <div className="max-w-4xl mx-auto px-4 pb-16">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 mb-6 text-sm font-semibold hover:underline"
+          className="inline-flex items-center gap-2 mb-5 text-sm font-semibold hover:underline"
           style={{ color: "#2D5016" }}
         >
           ← Voltar para os looks
         </Link>
 
-        <div className="rounded-xl overflow-hidden shadow-md mb-8 bg-white">
-          <div className="relative w-full" style={{ paddingBottom: "125%" }}>
-            <iframe
-              src={`https://www.instagram.com/p/${code}/embed/captioned/?cr=1&v=14&wp=540`}
-              className="absolute inset-0 w-full h-full border-0"
-              scrolling="no"
-              allowTransparency={true}
-              title="Post do Instagram"
-              loading="lazy"
-            />
+        {/* Layout lado a lado: embed + links */}
+        <div className="flex flex-col md:flex-row gap-6 items-start">
+
+          {/* Instagram Embed — coluna esquerda, tamanho fixo menor */}
+          <div className="w-full md:w-72 flex-shrink-0">
+            <div className="rounded-xl overflow-hidden shadow-md bg-white" style={{ height: "480px" }}>
+              <iframe
+                src={`https://www.instagram.com/p/${code}/embed/?cr=1&v=14&wp=288`}
+                width="100%"
+                height="480"
+                className="border-0 w-full h-full"
+                scrolling="no"
+                allowTransparency={true}
+                title="Post do Instagram"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          {/* Links das pecas — coluna direita */}
+          <div className="flex-1 w-full">
+            <h2 className="text-xl font-bold mb-4" style={{ color: "#2D5016" }}>
+              Pecas do Look
+            </h2>
+
+            {loading ? (
+              <p style={{ color: "#4a6b3a" }}>Carregando links...</p>
+            ) : items.length === 0 ? (
+              <p style={{ color: "#4a6b3a" }}>
+                Nenhum link disponivel para este look ainda.
+              </p>
+            ) : (
+              <div className="flex flex-col gap-3">
+                {items.map((item, i) => (
+                  <a
+                    key={i}
+                    href={item.item_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between px-5 py-4 rounded-xl shadow-sm font-semibold text-white transition-all duration-200 hover:scale-[1.02] hover:shadow-md active:scale-[0.98]"
+                    style={{ backgroundColor: "#2D5016" }}
+                  >
+                    <span>{item.item_nome}</span>
+                    <span className="text-sm text-white/80 whitespace-nowrap ml-4">
+                      Comprar →
+                    </span>
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
         </div>
-
-        <h2 className="text-xl font-bold mb-4" style={{ color: "#2D5016" }}>
-          Pecas do Look
-        </h2>
-
-        {loading ? (
-          <p style={{ color: "#4a6b3a" }}>Carregando links...</p>
-        ) : items.length === 0 ? (
-          <p style={{ color: "#4a6b3a" }}>
-            Nenhum link disponivel para este look ainda.
-          </p>
-        ) : (
-          <div className="flex flex-col gap-3">
-            {items.map((item, i) => (
-              <a
-                key={i}
-                href={item.item_link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-between px-5 py-4 rounded-xl shadow-sm font-semibold text-white transition-all duration-200 hover:scale-[1.02] hover:shadow-md active:scale-[0.98]"
-                style={{ backgroundColor: "#2D5016" }}
-              >
-                <span>{item.item_nome}</span>
-                <span className="text-sm text-white/80 whitespace-nowrap ml-4">
-                  Comprar na Shopee →
-                </span>
-              </a>
-            ))}
-          </div>
-        )}
       </div>
     </div>
   );
