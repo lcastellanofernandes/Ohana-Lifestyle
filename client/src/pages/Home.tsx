@@ -19,6 +19,7 @@ export default function Home() {
     "https://collshp.com/n/lauraohanalifestyle?view=storefront&utm_source=ig&utm_medium=social&utm_content=link_in_bio";
 
   const instagramPosts: InstagramPost[] = [
+    { id: "26", code: "DZxLOmwgddR", title: "Vestido Inverno Tubinho" },
     { id: "1",  code: "DZYZF0NAZE2",  title: "Vestido + Scarpin" },
     { id: "2",  code: "DZYH3_WH7oq",  title: "Look Dia dos Namorados" },
     { id: "3",  code: "DZXv3cZDVAP",  title: "Conjunto Alfaiataria" },
